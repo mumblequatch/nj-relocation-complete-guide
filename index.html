@@ -131,6 +131,9 @@ img { max-width: 100%; height: auto; }
 #toc li { margin-bottom: 0.5em; }
 #toc a { font-family: Charter, Georgia, 'Times New Roman', serif; color: rgb(25, 25, 25); text-decoration: none; }
 #toc a:hover { color: rgb(26, 195, 255); text-decoration: underline; }
+#toc ul ul { margin-top: 0.3em; font-size: 0.9em; }
+#toc ul ul li { margin-bottom: 0.3em; }
+#toc ul ul ul { font-size: 1em; }
 
 .chapter {
     padding-top: 2em;
@@ -264,36 +267,96 @@ body.screenplay hr.section-break {
 <nav id="toc">
   <h3 id="toc-heading">Contents</h3>
   <ul>
-    <li><a href="#family-profile-requirements">Family Profile &amp;amp; Requirements</a></li>
-    <li><a href="#montclair-primary-recommendation">Montclair: Primary Recommendation</a></li>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#montclair-quick-facts">Montclair Quick Facts</a></li>
-    <li><a href="#montclair-elementary-schools-complete-rankings">Montclair Elementary Schools: Complete Rankings</a></li>
-    <li><a href="#montclair-scenarios-three-options">Montclair Scenarios: Three Options</a></li>
-    <li><a href="#montclair-timeline-for-summer-2026-move">Montclair Timeline for Summer 2026 Move</a></li>
-    <li><a href="#alternative-area-1-south-orange-maplewood-soma">Alternative Area 1: South Orange &amp;amp; Maplewood (SOMA)</a></li>
-    <li><a href="#overview-1">Overview</a></li>
-    <li><a href="#south-orange">South Orange</a></li>
-    <li><a href="#maplewood">Maplewood</a></li>
-    <li><a href="#soma-combined-quick-facts">SOMA Combined Quick Facts</a></li>
-    <li><a href="#soma-school-system-reality">SOMA School System Reality</a></li>
-    <li><a href="#soma-scenario-a-maplewood-village">SOMA Scenario A: Maplewood Village</a></li>
-    <li><a href="#soma-scenario-b-south-orange-near-the-reservation">SOMA Scenario B: South Orange Near the Reservation</a></li>
-    <li><a href="#soma-fit-for-benjamin">SOMA Fit for Benjamin</a></li>
-    <li><a href="#alternative-area-2-glen-ridge">Alternative Area 2: Glen Ridge</a></li>
-    <li><a href="#overview-2">Overview</a></li>
-    <li><a href="#glen-ridge-quick-facts">Glen Ridge Quick Facts</a></li>
-    <li><a href="#glen-ridge-school-system-reality">Glen Ridge School System Reality</a></li>
-    <li><a href="#glen-ridge-scenario-the-montclair-border-option">Glen Ridge Scenario: The Montclair Border Option</a></li>
-    <li><a href="#alternative-area-3-princeton">Alternative Area 3: Princeton</a></li>
-    <li><a href="#overview-3">Overview</a></li>
-    <li><a href="#princeton-quick-facts">Princeton Quick Facts</a></li>
-    <li><a href="#princeton-school-system-reality">Princeton School System Reality</a></li>
-    <li><a href="#princeton-private-school-option">Princeton Private School Option</a></li>
-    <li><a href="#princeton-scenario-the-nassau-street-option">Princeton Scenario: The Nassau Street Option</a></li>
-    <li><a href="#head-to-head-comparison-all-four-areas">Head-to-Head Comparison: All Four Areas</a></li>
-    <li><a href="#useful-links-summary">Useful Links Summary</a></li>
-    <li><a href="#final-recommendation">Final Recommendation</a></li>
+    <li><a href="#family-profile-requirements">Family Profile &amp; Requirements</a>
+    </li>
+    <li><a href="#montclair-primary-recommendation">Montclair: Primary Recommendation</a>
+    </li>
+    <li><a href="#overview">Overview</a>
+    </li>
+    <li><a href="#montclair-quick-facts">Montclair Quick Facts</a>
+    </li>
+    <li><a href="#montclair-elementary-schools-complete-rankings">Montclair Elementary Schools: Complete Rankings</a>
+      <ul>
+        <li><a href="#part-1-official-rankings-by-test-scores">Part 1: Official Rankings by Test Scores</a>
+        </li>
+        <li><a href="#part-2-fit-for-benjamin-profoundly-gifted-self-paced-learner">Part 2: Fit for Benjamin (Profoundly Gifted, Self-Paced Learner)</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#montclair-scenarios-three-options">Montclair Scenarios: Three Options</a>
+      <ul>
+        <li><a href="#option-a-upper-montclair-edgemont-montessori">Option A: Upper Montclair + Edgemont Montessori</a>
+        </li>
+        <li><a href="#option-b-upper-montclair-bradford-elementary">Option B: Upper Montclair + Bradford Elementary</a>
+        </li>
+        <li><a href="#option-c-central-montclair-edgemont-montessori">Option C: Central Montclair + Edgemont Montessori</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#montclair-timeline-for-summer-2026-move">Montclair Timeline for Summer 2026 Move</a>
+    </li>
+    <li><a href="#alternative-area-1-south-orange-maplewood-soma">Alternative Area 1: South Orange &amp; Maplewood (SOMA)</a>
+    </li>
+    <li><a href="#overview-1">Overview</a>
+    </li>
+    <li><a href="#south-orange">South Orange</a>
+    </li>
+    <li><a href="#maplewood">Maplewood</a>
+    </li>
+    <li><a href="#soma-combined-quick-facts">SOMA Combined Quick Facts</a>
+    </li>
+    <li><a href="#soma-school-system-reality">SOMA School System Reality</a>
+    </li>
+    <li><a href="#soma-scenario-a-maplewood-village">SOMA Scenario A: Maplewood Village</a>
+    </li>
+    <li><a href="#soma-scenario-b-south-orange-near-the-reservation">SOMA Scenario B: South Orange Near the Reservation</a>
+    </li>
+    <li><a href="#soma-fit-for-benjamin">SOMA Fit for Benjamin</a>
+    </li>
+    <li><a href="#alternative-area-2-glen-ridge">Alternative Area 2: Glen Ridge</a>
+    </li>
+    <li><a href="#overview-2">Overview</a>
+    </li>
+    <li><a href="#glen-ridge-quick-facts">Glen Ridge Quick Facts</a>
+    </li>
+    <li><a href="#glen-ridge-school-system-reality">Glen Ridge School System Reality</a>
+    </li>
+    <li><a href="#glen-ridge-scenario-the-montclair-border-option">Glen Ridge Scenario: The Montclair Border Option</a>
+    </li>
+    <li><a href="#alternative-area-3-princeton">Alternative Area 3: Princeton</a>
+    </li>
+    <li><a href="#overview-3">Overview</a>
+    </li>
+    <li><a href="#princeton-quick-facts">Princeton Quick Facts</a>
+    </li>
+    <li><a href="#princeton-school-system-reality">Princeton School System Reality</a>
+    </li>
+    <li><a href="#princeton-private-school-option">Princeton Private School Option</a>
+    </li>
+    <li><a href="#princeton-scenario-the-nassau-street-option">Princeton Scenario: The Nassau Street Option</a>
+    </li>
+    <li><a href="#head-to-head-comparison-all-four-areas">Head-to-Head Comparison: All Four Areas</a>
+    </li>
+    <li><a href="#useful-links-summary">Useful Links Summary</a>
+      <ul>
+        <li><a href="#town-government">Town &amp; Government</a>
+        </li>
+        <li><a href="#school-districts">School Districts</a>
+        </li>
+        <li><a href="#school-ratings">School Ratings</a>
+        </li>
+        <li><a href="#real-estate">Real Estate</a>
+        </li>
+        <li><a href="#parks-recreation">Parks &amp; Recreation</a>
+        </li>
+        <li><a href="#culture-attractions">Culture &amp; Attractions</a>
+        </li>
+        <li><a href="#transit">Transit</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#final-recommendation">Final Recommendation</a>
+    </li>
   </ul>
 </nav>
 <div class="chapter">
